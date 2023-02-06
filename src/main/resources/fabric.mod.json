@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tbatemod",
+	"version": "${version}",
+	"name": "TBATE Mod",
+	"description": "God I want Arthur to godstep on me!",
+	"authors": [
+		"Bern"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tbatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bern.tbatemod.TBATEMod"
+		],
+		"client": [
+			"net.bern.tbatemod.TBATEModClient"
+		],
+		"fabric-datagen": [
+			"net.bern.tbatemod.TBATEModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tbatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
