@@ -1,5 +1,6 @@
 package net.bern.tbatemod;
 
+import net.bern.tbatemod.block.ModBlocks;
 import net.bern.tbatemod.item.ModItemGroup;
 import net.bern.tbatemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -21,6 +22,7 @@ public class TBATEMod implements ModInitializer {
 		// Proceed with mild caution!
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
