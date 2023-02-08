@@ -13,12 +13,14 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     // list of items: name cannot be capital
     public static final Item SYLVIE_ROCK = registerItem("sylvie_rock", new Item(new FabricItemSettings()));
+    public static final Item SYLVIE_EGG = registerItem("sylvie_egg", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TBATEMod.MOD_ID, name), item);
     }
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, SYLVIE_ROCK);
+        addToItemGroup(ItemGroups.INGREDIENTS, SYLVIE_EGG);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
