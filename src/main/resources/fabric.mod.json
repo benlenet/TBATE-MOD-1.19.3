@@ -18,6 +18,9 @@
 		"main": [
 			"net.bern.tbatemod.TBATEMod"
 		],
+		"client": [
+			"net.bern.tbatemod.TBATEModClient"
+		],
 		"fabric-datagen": [
 			"net.bern.tbatemod.TBATEModDataGenerator"
 		]

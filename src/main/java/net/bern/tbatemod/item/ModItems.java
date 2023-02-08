@@ -21,6 +21,8 @@ public class ModItems {
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, SYLVIE_ROCK);
         addToItemGroup(ItemGroups.INGREDIENTS, SYLVIE_EGG);
+        addToItemGroup(ModItemGroup.TBATE, SYLVIE_ROCK);
+        addToItemGroup(ModItemGroup.TBATE, SYLVIE_EGG);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
