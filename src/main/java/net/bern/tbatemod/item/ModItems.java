@@ -31,5 +31,6 @@ public class ModItems {
     // initializes class so that all items are properly registered
     public static void registerModItems() {
         TBATEMod.LOGGER.info("Registering Mod Items for " + TBATEMod.MOD_ID);
+        ModItems.addItemsToItemGroup();
     }
 }
