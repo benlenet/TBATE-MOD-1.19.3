@@ -13,5 +13,6 @@ public class ModItemGroup {
     public static void registerItemGroups() {
         TBATE = FabricItemGroup.builder(new Identifier(TBATEMod.MOD_ID, "sylvie_egg")).displayName(Text.literal("The " +
                 "Beginning After The End")).icon(() -> new ItemStack(ModItems.SYLVIE_EGG)).build();
+
     }
 }

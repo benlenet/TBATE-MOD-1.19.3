@@ -21,7 +21,6 @@ public class ModBlocks {
     public static final Block SYLVIE_STONE = registerBlock("sylvie_stone",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(17, 20)), ModItemGroup.TBATE);
-
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(TBATEMod.MOD_ID, name), block);
