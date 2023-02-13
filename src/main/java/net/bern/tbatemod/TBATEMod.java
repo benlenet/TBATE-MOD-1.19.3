@@ -3,6 +3,7 @@ package net.bern.tbatemod;
 import net.bern.tbatemod.block.ModBlocks;
 import net.bern.tbatemod.item.ModItemGroup;
 import net.bern.tbatemod.item.ModItems;
+import net.bern.tbatemod.networking.ModMessages;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ public class TBATEMod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModMessages.registerS2CPackets();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

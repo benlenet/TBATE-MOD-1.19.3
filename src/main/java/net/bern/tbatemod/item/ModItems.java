@@ -19,7 +19,7 @@ public class ModItems {
     public static final Item SYLVIE_EGG = registerItem("sylvie_egg",
             new EggSendMessage(new FabricItemSettings().maxCount(1)));
     public static final Item DAWN_BALLAD = registerItem("dawn_ballad",
-            new DawnBalladItem(DawnBalladMaterial.INSTANCE, 8, 1.4F, new Item.Settings()));
+            new DawnBalladItem(DawnBalladMaterial.INSTANCE, 9, -2F, new FabricItemSettings()));
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, SYLVIE_ROCK);

@@ -28,7 +28,7 @@ public class EggSendMessage extends Item {
             break;
             case 1:  player.sendMessage(Text.literal("You can feel power pulsing off of the egg."));
             break;
-            case 2: player.sendMessage(Text.literal("The egg gives you a newfound sense of strength."));
+            case 2:  player.sendMessage(Text.literal("The egg gives you a newfound sense of strength."));
         }
     }
 }
